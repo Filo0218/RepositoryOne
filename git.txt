@@ -1,0 +1,69 @@
+git:
+	a. 在书写代码的过程中,今天写了一天的代码发现写错了怎么办?怎么还原到昨天的代码
+	b. 我们开发的时候是团队开发,每个人的代码的业务不同,写完以后代码要进行合并 怎么合并?
+	c. 代码是团队开发 那我追踪谁什么时候提交的了什么代码?代码出错我要追责? 怎么追责?
+	d. 我们有的时候 在公司由电脑 家里有电脑 白天在公司写 晚上在家里写?不可能把公司电脑带回家?
+	........
+	版本控制工具:
+	a. SVN 老牌的版本控制工具 
+	b. 最流行的git
+		林纳斯托瓦兹 开发的一个工具。
+		Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 [1]  也是Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件
+
+下载安装:
+a. 查看版本号
+	chanh@DESKTOP-L3D0T3B MINGW64 ~/Desktop
+	$ git --version
+	git version 2.37.1.windows.1
+b. gitbash linux命令客户端  执行linux命令
+	git --help 查看所有的 git命令	
+c. 全局的初始化的配置
+	用户名 远程仓库注册的用户名 
+	$ git config --global user.name "John Doe"
+	远程仓库注册时候使用的邮箱
+	$ git config --global user.email johndoe@example.com	
+4. 查看所有的配置的信息列表
+	$ git config --list --show-origin
+	file:F:/tools/Git/etc/gitconfig init.defaultbranch=master
+	file:C:/Users/chanh/.gitconfig  user.name=chanhuiwumeng
+	file:C:/Users/chanh/.gitconfig  user.email=523489273@qq.com
+5. 配置信息的文件地址是在:
+	‪C:\Users\chanh\.gitconfig
+6. 初始化本地仓库
+	git init
+	初始化完成以后会有一个 隐藏的.git的文件夹
+7. 新建文件/文件夹
+8. 将需要提交的文件添加到暂存区
+	git add xx.txt  添加一个文件
+	git add xx.txt xx.png xxx.gif  多个文件
+	git add .  当前文件夹下的所有文件
+9. git status 查看git 的状态	
+10. 提交文件到暂存区
+	commit 提交的时候 一定要加注释 
+	git commit -m "注释信息"
+11. 在github 新建仓库
+
+12. 添加远程的仓库地址
+	  git remote add origin https://github.com/chanhuiwumeng/java63-git.git
+13. 推送到远程的仓库 的哪一个分支上边
+	git push origin master
+14. 克隆远程仓库的数据
+	git clone https://github.com/chanhuiwumeng/java63-git.git
+
+15. 默认是通过主分支拉取仓库的数据
+
+16.切换分支
+	git checout 切换分支
+17.合并哪一个分支的代码
+	git merge 要合并的分支名称
+18. 拉取远程仓库的文件
+	git pull 仓库  分支
+	git pull origin main	
+
+
+
+
+
+
+
+
